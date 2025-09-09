@@ -14,6 +14,7 @@ $tests = @(
     ,@{ exe = "tests\\t11.exe"; name = "t11_return_decimal_overflow"; expectCode = 0; expectStderrContains = "ALERTA SEMANTICO" }
     ,@{ exe = "tests\\t12.exe"; name = "t12_escreva_decimal_vs_var"; expectCode = 0; expectStderrContains = "ALERTA SEMANTICO" }
     ,@{ exe = "tests\\t_symtab_unit.exe"; name = "t_symtab_unit"; expectCode = 0; expectStderrContains = "" }
+    ,@{ exe = "tests\\t_principal_missing.exe"; name = "t_principal_missing"; expectCode = 1; expectStderrContains = "Modulo Principal Inexistente" }
 )
 
 $results = @()
